@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html ng-app="angularApp">
+    <head>
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+      <script src="script.js"></script>
+    </head>
+    <body ng-controller="mainController">
+        <header>
+            <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Green Beret Deals</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#deals"><i class="fa fa-usd"></i> Deals</a></li>
+                    <li><a href="#game"><i class="fa fa-gamepad"></i> Daily Game</a></li>
+                </ul>
+            </div>
+            </nav>
+      <div id="main">
+        {{ message }}
+
+    <!-- angular templating -->
+    <!-- this is where content will be injected -->
+      <div ng-view></div>
+      </div>
+        </header>
